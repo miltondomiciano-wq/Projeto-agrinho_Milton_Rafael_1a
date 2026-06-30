@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AgroForte - O maior movimento por uma agricultura forte, produtiva e verdadeiramente sustentável no Brasil. Conheça soluções, tecnologias e teste o futuro da sua fazenda.">
+    <meta name="keywords" content="agricultura sustentável, agro forte, futuro sustentável, ILPF, agricultura regenerativa, Brasil, Embrapa, carbono, produtividade">
+    <meta name="author" content="AgroForte">
+    <title>AgroForte • Futuro Sustentável | Agricultura Forte e Regenerativa</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Heroicons (inline SVGs) + custom styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 overflow-x-hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l-1 3m1-3l1-3m-9-3l1-3m-1 3l-1-3" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.75v6.75m0 0l-3-3m3 3l3-3" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="font-bold text-3xl tracking-tighter text-emerald-900">Agro</span>
+                        <span class="font-bold text-3xl tracking-tighter text-emerald-700">Forte</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#desafio" class="hover:text-emerald-700 transition-colors">O Desafio</a>
+                    <a href="#solucoes" class="hover:text-emerald-700 transition-colors">Soluções</a>
+                    <a href="#tecnologias" class="hover:text-emerald-700 transition-colors">Tecnologias</a>
+                    <a href="#impacto" class="hover:text-emerald-700 transition-colors">Impacto</a>
+                    <a href="#interaja" class="hover:text-emerald-700 transition-colors">Interaja</a>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <!-- CTA Button -->
+                    <a href="#interaja" 
+                       class="hidden sm:inline-flex items-center px-6 py-3 text-sm font-semibold rounded-2xl bg-emerald-800 hover:bg-emerald-900 transition-all active:scale-[0.985] text-white shadow-lg shadow-emerald-900/30">
+                        <i class="fa-solid fa-play mr-2"></i>
+                        <span>Testar Minha Fazenda</span>
+                    </a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-11 h-11 flex items-center justify-center text-emerald-800 hover:bg-emerald-100 rounded-2xl transition-colors"
+                            aria-label="Abrir menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t bg-white px-6 py-6">
+            <div class="flex flex-col gap-y-4 text-base font-medium">
+                <a href="#desafio" class="mobile-link py-2">O Desafio</a>
+                <a href="#solucoes" class="mobile-link py-2">Soluções</a>
+                <a href="#tecnologias" class="mobile-link py-2">Tecnologias</a>
+                <a href="#impacto" class="mobile-link py-2">Impacto Real</a>
+                <a href="#interaja" class="mobile-link py-2">Interaja Agora</a>
+                
+                <div class="pt-4 border-t">
+                    <a href="#interaja" 
+                       class="flex w-full items-center justify-center gap-x-2 px-6 py-3.5 text-sm font-semibold rounded-2xl bg-emerald-800 text-white">
+                        <i class="fa-solid fa-play mr-2"></i>
+                        Testar Minha Fazenda
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative farm-bg h-[100dvh] min-h-[640px] flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff10_0.8px,transparent_1px)] bg-[length:5px_5px]"></div>
+        
+        <div class="max-w-screen-2xl mx-auto px-8 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-x-2 bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-medium px-5 py-1.5 rounded-3xl mb-6">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span>Plano ABC+ • Brasil 2030 • COP30</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl lg:text-[5.1rem] leading-[1.05] font-bold tracking-tighter mb-6 heading-serif">
+                    Agro <span class="text-emerald-300">Forte</span>.<br>
+                    Futuro <span class="text-emerald-300">Sustentável</span>.
+                </h1>
+                
+                <p class="max-w-2xl mx-auto text-xl md:text-2xl text-white/90 mb-10 font-light tracking-tight">
+                    Transformando a agricultura brasileira em potência mundial de produção 
+                    regenerativa, sequestro de carbono e prosperidade para todos.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#interaja" 
+                       class="group inline-flex items-center justify-center gap-x-3 px-9 py-4 text-lg font-semibold rounded-3xl bg-white text-emerald-900 hover:bg-emerald-50 active:scale-[0.985] transition-all shadow-2xl w-full sm:w-auto">
+                        <span>Descubra seu potencial</span>
+                        <i class="fa-solid fa-arrow-right group-active:translate-x-1 transition"></i>
+                    </a>
+                    
+                    <a href="#solucoes" 
+                       class="inline-flex items-center justify-center gap-x-3 px-9 py-4 text-lg font-semibold rounded-3xl border-2 border-white/70 hover:bg-white/10 transition-all w-full sm:w-auto">
+                        <span>Ver as soluções</span>
+                    </a>
+                </div>
+                
+                <div class="mt-12 flex items-center justify-center gap-x-8 text-sm">
+                    <div class="flex -space-x-2">
+                        <div class="w-7 h-7 rounded-full border border-white/40 overflow-hidden"><img src="https://picsum.photos/id/1005/28/28" alt=""></div>
+                        <div class="w-7 h-7 rounded-full border border-white/40 overflow-hidden"><img src="https://picsum.photos/id/1011/28/28" alt=""></div>
+                        <div class="w-7 h-7 rounded-full border border-white/40 overflow-hidden"><img src="https://picsum.photos/id/201/28/28" alt=""></div>
+                    </div>
+                    <div class="text-white/70 text-sm">
+                        +<span class="font-semibold text-white">47.800</span> produtores já fazem parte
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 hidden md:block">
+            <div class="flex flex-col items-center text-white/60 text-xs tracking-[3px]">
+                <span>ROLE PARA DESCOBRIR</span>
+                <i class="fa-solid fa-chevron-down mt-1.5 animate-bounce"></i>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- TRUST BAR -->
+        <div class="border-b bg-white py-5">
+            <div class="max-w-screen-2xl mx-auto px-8">
+                <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-10 gap-y-4 text-sm text-slate-500">
+                    <div class="flex items-center gap-x-3">
+                        <span class="font-medium">Apoiado por:</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-x-8 gap-y-2 text-emerald-900 font-semibold text-sm">
+                        <div class="flex items-center gap-x-2"><i class="fa-solid fa-leaf"></i> <span>Embrapa</span></div>
+                        <div>Ministério da Agricultura</div>
+                        <div>ABC+ Brasil</div>
+                        <div class="hidden md:block">The Nature Conservancy</div>
+                        <div class="hidden md:block">WWF Brasil</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- O DESAFIO -->
+        <section id="desafio" class="max-w-screen-2xl mx-auto px-8 pt-16 pb-12">
+            <div class="grid md:grid-cols-12 gap-x-12 items-center">
+                <div class="md:col-span-5">
+                    <div class="sticky top-24">
+                        <div class="inline-block px-4 py-1 rounded-3xl bg-red-100 text-red-700 text-xs font-bold tracking-widest mb-4">O CENÁRIO ATUAL</div>
+                        <h2 class="section-header text-balance">O agro brasileiro precisa evoluir.<br>Urgentemente.</h2>
+                        <p class="mt-5 text-lg text-slate-600">Produzimos muito. Mas estamos esgotando o solo, emitindo carbono e deixando o futuro das próximas gerações em risco.</p>
+                        
+                        <div class="mt-8 space-y-3 text-sm">
+                            <div class="flex gap-x-3">
+                                <i class="fa-solid fa-exclamation-triangle text-red-500 mt-1"></i>
+                                <div><span class="font-semibold">67%</span> das áreas agrícolas brasileiras apresentam algum grau de degradação do solo</div>
+                            </div>
+                            <div class="flex gap-x-3">
+                                <i class="fa-solid fa-exclamation-triangle text-red-500 mt-1"></i>
+                                <div><span class="font-semibold">+1,8 bilhão</span> de toneladas de CO₂e emitidas anualmente pelo setor</div>
+                            </div>
+                            <div class="flex gap-x-3">
+                                <i class="fa-solid fa-exclamation-triangle text-red-500 mt-1"></i>
+                                <div>Perda de <span class="font-semibold">R$ 42 bilhões</span> por ano em produtividade devido à erosão e degradação</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7 mt-12 md:mt-0">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+                        <!-- Stat Cards -->
+                        <div class="bg-white border border-red-100 rounded-3xl p-7 agro-card">
+                            <div class="text-red-600 text-5xl font-bold tabular-nums">42%</div>
+                            <div class="font-semibold mt-4">das pastagens degradadas</div>
+                            <div class="text-sm text-slate-500 mt-1">Precisam de recuperação urgente</div>
+                        </div>
+                        <div class="bg-white border border-red-100 rounded-3xl p-7 agro-card">
+                            <div class="text-red-600 text-5xl font-bold tabular-nums">3,8t</div>
+                            <div class="font-semibold mt-4">CO₂ por hectare/ano</div>
+                            <div class="text-sm text-slate-500 mt-1">emitidos em média na agricultura convencional</div>
+                        </div>
+                        <div class="bg-white border border-red-100 rounded-3xl p-7 agro-card">
+                            <div class="text-red-600 text-5xl font-bold tabular-nums">-18%</div>
+                            <div class="font-semibold mt-4">Queda de produtividade</div>
+                            <div class="text-sm text-slate-500 mt-1">em áreas com manejo inadequado nos últimos 15 anos</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-white border-l-4 border-emerald-700 p-7 rounded-r-3xl">
+                        <p class="italic text-lg">"O Brasil tem potencial para ser o maior produtor de alimentos sustentáveis do planeta. O que falta é escala nas boas práticas."</p>
+                        <div class="mt-3 text-sm font-medium">— Dra. Ana Paula Lopes, Embrapa Solos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISÃO DO FUTURO -->
+        <section class="bg-emerald-900 text-white py-16">
+            <div class="max-w-screen-2xl mx-auto px-8 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-emerald-300 text-sm tracking-[4px] font-semibold mb-3">NOSSA VISÃO 2035</div>
+                    <h2 class="text-5xl font-bold heading-serif tracking-tighter">Um Brasil onde o agro é a solução,<br> não o problema.</h2>
+                    <p class="mt-6 text-xl text-emerald-100">Em 2035, queremos que 70% das áreas agrícolas brasileiras sejam manejadas com práticas regenerativas, gerando mais alimento, mais renda e carbono negativo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUÇÕES -->
+        <section id="solucoes" class="max-w-screen-2xl mx-auto px-8 pt-20 pb-16">
+            <div class="text-center mb-12">
+                <div class="inline px-5 py-1.5 rounded-3xl bg-emerald-100 text-emerald-700 text-xs font-extrabold tracking-widest">O QUE FUNCIONA DE VERDADE</div>
+                <h2 class="section-header mt-3">Soluções que já estão transformando o campo brasileiro</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="agro-card bg-white border border-emerald-100 rounded-3xl p-8 group">
+                    <div class="w-14 h-14 flex items-center justify-center bg-emerald-100 text-emerald-700 rounded-2xl mb-7 group-hover:bg-emerald-700 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-seedling text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl tracking-tight">Integração Lavoura-Pecuária-Floresta (ILPF)</h3>
+                    <p class="mt-3 text-slate-600">Sistema que combina produção de grãos, carne e madeira na mesma área, aumentando a produtividade em até 3x e sequestrando carbono.</p>
+                    <div class="mt-auto pt-6 flex items-center text-emerald-700 font-semibold text-sm">
+                        <span>Ver cases</span> <i class="fa-solid fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </div>
+                </div>
+                
+                <div class="agro-card bg-white border border-emerald-100 rounded-3xl p-8 group">
+                    <div class="w-14 h-14 flex items-center justify-center bg-emerald-100 text-emerald-700 rounded-2xl mb-7 group-hover:bg-emerald-700 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-globe text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl tracking-tight">Agricultura Regenerativa</h3>
+                    <p class="mt-3 text-slate-600">Plantio direto, rotação de culturas, cobertura permanente do solo e adubação verde. Recupera a vida do solo e aumenta a resiliência climática.</p>
+                    <div class="mt-8 flex items-center text-emerald-700 font-semibold text-sm">
+                        <span>Ver cases</span> <i class="fa-solid fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </div>
+                </div>
+                
+                <div class="agro-card bg-white border border-emerald-100 rounded-3xl p-8 group">
+                    <div class="w-14 h-14 flex items-center justify-center bg-emerald-100 text-emerald-700 rounded-2xl mb-7 group-hover:bg-emerald-700 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="font-bold text-2xl tracking-tight">Agricultura de Precisão + IA</h3>
+                    <p class="mt-3 text-slate-600">Drones, sensores de solo, satélites e inteligência artificial para aplicação variável de insumos. Reduz custos em até 25% e aumenta eficiência.</p>
+                    <div class="mt-8 flex items-center text-emerald-700 font-semibold text-sm">
+                        <span>Ver cases</span> <i class="fa-solid fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARISON SLIDER - Before x After -->
+        <section class="max-w-screen-2xl mx-auto px-8 pb-20">
+            <div class="bg-white border border-emerald-100 rounded-3xl p-2 md:p-3 shadow-sm">
+                <div class="px-8 pt-8 pb-4">
+                    <div class="flex justify-between items-end mb-6">
+                        <div>
+                            <h3 class="font-bold text-3xl tracking-tight">Veja a transformação na prática</h3>
+                            <p class="text-slate-600">Arraste o controle para comparar uma fazenda convencional e uma regenerativa</p>
+                        </div>
+                        <div class="hidden md:flex gap-x-8 text-xs font-semibold">
+                            <div class="flex items-center gap-x-2"><div class="w-3 h-3 bg-red-400 rounded"></div> <span>Convencional</span></div>
+                            <div class="flex items-center gap-x-2"><div class="w-3 h-3 bg-emerald-500 rounded"></div> <span>Regenerativa (5 anos)</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Container -->
+                <div class="comparison-slider mx-auto max-w-[1100px] aspect-[16/9] relative select-none" id="comparison-container">
+                    <!-- Before Image -->
+                    <div class="absolute inset-0 bg-cover bg-center rounded-[14px]" 
+                         style="background-image: url('https://picsum.photos/id/1016/1400/900')">
+                        <div class="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent rounded-[14px]"></div>
+                        <div class="absolute top-6 left-6 bg-white/90 text-red-700 text-xs font-bold px-4 py-1 rounded-3xl">CONVENCIONAL • 2021</div>
+                    </div>
+                    
+                    <!-- After Image -->
+                    <div class="comparison-after rounded-[14px]" id="comparison-after"
+                         style="background-image: url('https://picsum.photos/id/1005/1400/900')">
+                        <div class="absolute top-6 right-6 bg-emerald-700 text-white text-xs font-bold px-4 py-1 rounded-3xl">REGENERATIVA • 2026</div>
+                    </div>
+                    
+                    <!-- Slider Handle -->
+                    <div id="slider-handle" 
+                         class="slider-handle left-1/2 -translate-x-1/2 cursor-ew-resize flex items-center justify-center"
+                         style="left: 50%">
+                        <div class="w-11 h-11 bg-white rounded-full flex items-center justify-center shadow-xl border border-emerald-700 z-20">
+                            <i class="fa-solid fa-arrows-alt-h text-emerald-800"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="px-8 pb-6 pt-3 text-center text-xs text-slate-500">Arraste o botão ou clique em qualquer ponto da imagem</div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGIAS -->
+        <section id="tecnologias" class="max-w-screen-2xl mx-auto px-8 pb-20">
+            <div class="flex flex-col lg:flex-row gap-x-16 gap-y-10 items-start">
+                <div class="lg:w-5/12">
+                    <div class="sticky top-24">
+                        <div class="text-emerald-600 font-bold tracking-widest text-sm">INOVAÇÃO NO CAMPO</div>
+                        <h2 class="section-header mt-3">Tecnologias que estão revolucionando o agro brasileiro</h2>
+                        <p class="mt-4 text-lg text-slate-600">Do satélite ao solo, a tecnologia está tornando a sustentabilidade mais produtiva e acessível.</p>
+                        
+                        <div class="mt-8 hidden lg:block">
+                            <button onclick="showAllTechnologies()" 
+                                    class="text-sm font-semibold flex items-center gap-x-2 text-emerald-700 hover:text-emerald-800">
+                                VER TODAS AS TECNOLOGIAS <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <!-- Tech Cards -->
+                    <div onclick="showTechModal(0)" class="agro-card cursor-pointer bg-white border border-emerald-100 hover:border-emerald-300 p-7 rounded-3xl group">
+                        <div class="flex justify-between">
+                            <div class="tech-icon text-4xl text-emerald-700"><i class="fa-solid fa-satellite"></i></div>
+                            <div class="text-[10px] px-3 py-1 h-fit rounded-2xl bg-emerald-100 text-emerald-700 font-bold">EMBRAPA + INPE</div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="font-bold text-xl">Satélites + IA para manejo</div>
+                            <div class="text-sm text-slate-600 mt-2">Monitoramento em tempo real de saúde do solo, umidade e pragas com precisão de 98%.</div>
+                        </div>
+                    </div>
+                    
+                    <div onclick="showTechModal(1)" class="agro-card cursor-pointer bg-white border border-emerald-100 hover:border-emerald-300 p-7 rounded-3xl group">
+                        <div class="flex justify-between">
+                            <div class="tech-icon text-4xl text-emerald-700"><i class="fa-solid fa-dna"></i></div>
+                            <div class="text-[10px] px-3 py-1 h-fit rounded-2xl bg-emerald-100 text-emerald-700 font-bold">BIOINSUMOS</div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="font-bold text-xl">Bioinsumos e Microbioma do Solo</div>
+                            <div class="text-sm text-slate-600 mt-2">Bactérias e fungos benéficos que substituem fertilizantes químicos e aumentam a fixação de nitrogênio.</div>
+                        </div>
+                    </div>
+                    
+                    <div onclick="showTechModal(2)" class="agro-card cursor-pointer bg-white border border-emerald-100 hover:border-emerald-300 p-7 rounded-3xl group">
+                        <div class="flex justify-between">
+                            <div class="tech-icon text-4xl text-emerald-700"><i class="fa-solid fa-robot"></i></div>
+                            <div class="text-[10px] px-3 py-1 h-fit rounded-2xl bg-emerald-100 text-emerald-700 font-bold">AUTOMAÇÃO</div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="font-bold text-xl">Robôs e Drones Autônomos</div>
+                            <div class="text-sm text-slate-600 mt-2">Plantio preciso, aplicação localizada de defensivos e colheita automatizada com redução de 70% no uso de químicos.</div>
+                        </div>
+                    </div>
+                    
+                    <div onclick="showTechModal(3)" class="agro-card cursor-pointer bg-white border border-emerald-100 hover:border-emerald-300 p-7 rounded-3xl group">
+                        <div class="flex justify-between">
+                            <div class="tech-icon text-4xl text-emerald-700"><i class="fa-solid fa-water"></i></div>
+                            <div class="text-[10px] px-3 py-1 h-fit rounded-2xl bg-emerald-100 text-emerald-700 font-bold">EFICIÊNCIA HÍDRICA</div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="font-bold text-xl">Irrigação Inteligente 4.0</div>
+                            <div class="text-sm text-slate-600 mt-2">Sensores + IA que reduzem o consumo de água em até 45% mantendo ou aumentando a produtividade.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACTO REAL -->
+        <section id="impacto" class="bg-emerald-950 text-white py-16">
+            <div class="max-w-screen-2xl mx-auto px-8">
+                <div class="text-center mb-12">
+                    <div class="text-emerald-400 text-sm font-bold tracking-[3px]">RESULTADOS COMPROVADOS</div>
+                    <h2 class="section-header mt-3 text-white">O que já estamos construindo juntos</h2>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center border border-white/10 rounded-3xl p-8">
+                        <div id="stat-1" class="metric-value stat-number" data-target="47800">0</div>
+                        <div class="text-emerald-300 mt-1 text-sm font-medium tracking-wider">PRODUTORES CERTIFICADOS</div>
+                    </div>
+                    <div class="text-center border border-white/10 rounded-3xl p-8">
+                        <div id="stat-2" class="metric-value stat-number" data-target="2.4">0</div>
+                        <div class="text-emerald-300 mt-1 text-sm font-medium tracking-wider">MILHÕES DE HECTARES REGENERADOS</div>
+                    </div>
+                    <div class="text-center border border-white/10 rounded-3xl p-8">
+                        <div id="stat-3" class="metric-value stat-number" data-target="18.7">0</div>
+                        <div class="text-emerald-300 mt-1 text-sm font-medium tracking-wider">MILHÕES DE TONELADAS DE CO₂ SEQUESTRADAS</div>
+                    </div>
+                    <div class="text-center border border-white/10 rounded-3xl p-8">
+                        <div id="stat-4" class="metric-value stat-number" data-target="31">0</div>
+                        <div class="text-emerald-300 mt-1 text-sm font-medium tracking-wider">% DE AUMENTO MÉDIO NA RENDA</div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <p class="max-w-md mx-auto text-emerald-200">Dados atualizados em tempo real pelo Sistema Nacional de Monitoramento da Agricultura Regenerativa (SNMAR)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERAJA - QUIZ + CALCULADORA -->
+        <section id="interaja" class="max-w-screen-2xl mx-auto px-8 py-20">
+            <div class="text-center mb-12">
+                <div class="inline-block px-6 py-1 rounded-3xl bg-emerald-100 text-emerald-700 text-xs font-extrabold tracking-[2px]">EXPERIÊNCIA INTERATIVA</div>
+                <h2 class="section-header mt-3">Teste o futuro da sua fazenda</h2>
+                <p class="max-w-lg mx-auto mt-3 text-lg text-slate-600">Responda o quiz e use nossa calculadora para descobrir o potencial de transformação da sua propriedade.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-12 gap-8">
+                
+                <!-- QUIZ -->
+                <div class="lg:col-span-7 bg-white border border-emerald-100 shadow-sm rounded-3xl p-9">
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <span class="font-bold text-xl">Quiz: Qual é o seu nível de sustentabilidade?</span>
+                        </div>
+                        <div id="quiz-progress" class="text-xs font-mono bg-emerald-100 text-emerald-700 px-3 py-1 rounded-2xl font-bold">1/7</div>
+                    </div>
+                    
+                    <div id="quiz-container">
+                        <!-- Quiz content injected by JS -->
+                    </div>
+                    
+                    <div class="flex justify-between items-center mt-8">
+                        <button onclick="prevQuestion()" id="quiz-prev"
+                                class="px-6 py-3 text-sm font-semibold text-slate-500 hover:text-slate-700 flex items-center gap-x-2 disabled:opacity-40" disabled>
+                            <i class="fa-solid fa-arrow-left"></i> <span>Anterior</span>
+                        </button>
+                        
+                        <button onclick="nextQuestion()" id="quiz-next"
+                                class="px-8 py-3.5 rounded-2xl font-semibold bg-emerald-800 hover:bg-emerald-900 transition-colors text-white flex items-center gap-x-2 text-sm">
+                            <span id="quiz-next-text">Próxima pergunta</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- CALCULADORA -->
+                <div class="lg:col-span-5 bg-emerald-900 text-white rounded-3xl p-9 flex flex-col">
+                    <div class="mb-6">
+                        <div class="font-bold text-2xl tracking-tight">Calculadora de Impacto</div>
+                        <p class="text-emerald-200 text-sm mt-1">Descubra quanto você pode ganhar em produtividade e carbono</p>
+                    </div>
+                    
+                    <div class="space-y-5 flex-1">
+                        <div>
+                            <label class="text-xs font-semibold tracking-wider text-emerald-300">ÁREA DA FAZENDA (hectares)</label>
+                            <input type="range" id="area-range" min="50" max="5000" step="50" value="850" 
+                                   class="w-full accent-emerald-400 mt-2" oninput="updateCalculator()">
+                            <div class="flex justify-between text-xs mt-1">
+                                <div>50 ha</div>
+                                <div id="area-value" class="font-mono font-bold text-xl text-white">850</div>
+                                <div>5.000 ha</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="text-xs font-semibold tracking-wider text-emerald-300">% DE ÁREA COM PRÁTICAS SUSTENTÁVEIS</label>
+                            <input type="range" id="sust-range" min="0" max="100" step="5" value="35" 
+                                   class="w-full accent-emerald-400 mt-2" oninput="updateCalculator()">
+                            <div class="flex justify-between text-xs mt-1">
+                                <div>0%</div>
+                                <div id="sust-value" class="font-mono font-bold text-xl text-white">35%</div>
+                                <div>100%</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="text-xs font-semibold tracking-wider text-emerald-300">PRINCIPAL ATIVIDADE</label>
+                            <select id="atividade-select" onchange="updateCalculator()" 
+                                    class="w-full mt-2 bg-emerald-800 border border-emerald-700 text-white rounded-2xl px-4 py-3 text-sm">
+                                <option value="soja">Soja / Grãos</option>
+                                <option value="milho">Milho</option>
+                                <option value="pecuaria">Pecuária de Corte</option>
+                                <option value="leite">Pecuária de Leite</option>
+                                <option value="cafe">Café</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-auto pt-8 border-t border-emerald-700">
+                        <button onclick="calculateImpact()" 
+                                class="w-full py-4 text-sm font-bold tracking-wider rounded-2xl bg-white text-emerald-900 hover:bg-emerald-100 active:scale-[0.985] transition flex justify-center items-center gap-x-2">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>CALCULAR MEU IMPACTO</span>
+                        </button>
+                        
+                        <div id="calculator-results" class="hidden mt-6 text-sm space-y-3">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASES DE SUCESSO -->
+        <section class="max-w-screen-2xl mx-auto px-8 pb-20">
+            <div class="flex items-end justify-between mb-8">
+                <div>
+                    <div class="font-bold tracking-widest text-emerald-600 text-sm">HISTÓRIAS REAIS</div>
+                    <h3 class="text-4xl font-bold tracking-tighter">Quem já está colhendo os frutos</h3>
+                </div>
+                <a href="#" class="hidden md:flex items-center text-sm font-semibold text-emerald-700 hover:text-emerald-800">Ver todos os cases <i class="fa-solid fa-arrow-right ml-2"></i></a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Case 1 -->
+                <div onclick="showCaseModal(0)" class="group cursor-pointer bg-white border border-emerald-100 overflow-hidden rounded-3xl agro-card">
+                    <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/160/600/400')"></div>
+                    <div class="p-7">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <div class="font-bold">Fazenda Santa Rita</div>
+                                <div class="text-xs text-emerald-700">Mato Grosso • 4.200 ha</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-emerald-600 font-mono text-sm font-bold">+142%</div>
+                                <div class="text-[10px] -mt-0.5 text-emerald-700">produtividade</div>
+                            </div>
+                        </div>
+                        <div class="text-xs mt-4 text-slate-500">“Passamos de 58 sacas/ha para 141 sacas/ha de soja em 4 anos com ILPF e bioinsumos.”</div>
+                    </div>
+                </div>
+                
+                <div onclick="showCaseModal(1)" class="group cursor-pointer bg-white border border-emerald-100 overflow-hidden rounded-3xl agro-card">
+                    <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/251/600/400')"></div>
+                    <div class="p-7">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <div class="font-bold">Grupo São João</div>
+                                <div class="text-xs text-emerald-700">Goiás • 12.800 ha</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-emerald-600 font-mono text-sm font-bold">-68%</div>
+                                <div class="text-[10px] -mt-0.5 text-emerald-700">emissões de CO₂</div>
+                            </div>
+                        </div>
+                        <div class="text-xs mt-4 text-slate-500">“Hoje somos carbono negativo. Exportamos créditos de carbono e aumentamos a margem em 41%.”</div>
+                    </div>
+                </div>
+                
+                <div onclick="showCaseModal(2)" class="group cursor-pointer bg-white border border-emerald-100 overflow-hidden rounded-3xl agro-card">
+                    <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/292/600/400')"></div>
+                    <div class="p-7">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <div class="font-bold">Fazenda Veredas</div>
+                                <div class="text-xs text-emerald-700">Minas Gerais • 890 ha</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-emerald-600 font-mono text-sm font-bold">+87%</div>
+                                <div class="text-[10px] -mt-0.5 text-emerald-700">biodiversidade</div>
+                            </div>
+                        </div>
+                        <div class="text-xs mt-4 text-slate-500">“Recuperamos nascentes, aumentamos abelhas e hoje vendemos mel orgânico premium junto com o café.”</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="max-w-screen-2xl mx-auto px-8 pb-16">
+            <div class="bg-emerald-900 text-white rounded-[2.75rem] px-10 md:px-16 py-14 text-center md:text-left md:flex items-center gap-x-12">
+                <div class="md:w-7/12">
+                    <div class="text-emerald-300 font-bold tracking-widest text-xs mb-3">PRÓXIMO PASSO</div>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tighter">Pronto para transformar sua fazenda?</h2>
+                    <p class="mt-4 text-emerald-100 max-w-md">Junte-se a mais de 47 mil produtores que já estão construindo o futuro sustentável do agro brasileiro.</p>
+                </div>
+                
+                <div class="md:w-5/12 mt-8 md:mt-0">
+                    <button onclick="joinMovement()" 
+                            class="w-full md:w-auto px-10 py-4 bg-white hover:bg-emerald-50 active:scale-[0.985] transition-all text-emerald-900 font-extrabold tracking-wider rounded-3xl flex items-center justify-center gap-x-3 text-lg shadow-xl">
+                        <span>QUERO FAZER PARTE DO AGROFORTE</span>
+                    </button>
+                    <div class="text-emerald-300 text-xs mt-4 tracking-wider">Compromisso gratuito • Resultados em 90 dias</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white/70 text-sm pt-14 pb-9">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row justify-between gap-y-12">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-9 h-9 bg-emerald-700 rounded-2xl flex items-center justify-center">
+                            <span class="text-white font-black text-xl">AF</span>
+                        </div>
+                        <span class="font-bold text-3xl text-white tracking-tighter">AgroForte</span>
+                    </div>
+                    <div class="max-w-xs">Movimento nacional pela agricultura forte, produtiva e regenerativa.</div>
+                    
+                    <div class="flex gap-x-5 mt-6 text-xl">
+                        <i class="fa-brands fa-instagram cursor-pointer hover:text-white"></i>
+                        <i class="fa-brands fa-linkedin cursor-pointer hover:text-white"></i>
+                        <i class="fa-brands fa-youtube cursor-pointer hover:text-white"></i>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-8 text-sm">
+                    <div>
+                        <div class="font-semibold text-white mb-4">Plataforma</div>
+                        <div class="space-y-[7px]">
+                            <div>Dashboard do Produtor</div>
+                            <div>Certificação Regenerativa</div>
+                            <div>Mercado de Carbono</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white mb-4">Recursos</div>
+                        <div class="space-y-[7px]">
+                            <div>Guia de Boas Práticas</div>
+                            <div>Calculadora de Carbono</div>
+                            <div>Comunidade AgroForte</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white mb-4">Sobre</div>
+                        <div class="space-y-[7px]">
+                            <div>Nossa Missão</div>
+                            <div>Impacto 2030</div>
+                            <div>Transparência</div>
+                            <div>Contato</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-14 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <div>© 2026 AgroForte • Todos os direitos reservados • Uma iniciativa do Brasil para o mundo</div>
+                <div class="mt-3 md:mt-0">Feito com <span class="text-emerald-400">🌱</span> para um futuro sustentável</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    
+    <!-- Tech Modal -->
+    <div id="tech-modal" onclick="if (event.target.id === 'tech-modal') hideTechModal()" class="hidden fixed inset-0 bg-black/70 z-[100] flex items-center justify-center p-6">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white max-w-lg w-full rounded-3xl overflow-hidden modal">
+            <div class="p-9" id="tech-modal-content">
+                <!-- Dynamic content -->
+            </div>
+            <div class="px-9 pb-8">
+                <button onclick="hideTechModal()" 
+                        class="w-full py-3.5 rounded-2xl border font-semibold hover:bg-slate-50 transition">Fechar</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Case Modal -->
+    <div id="case-modal" onclick="if (event.target.id === 'case-modal') hideCaseModal()" class="hidden fixed inset-0 bg-black/70 z-[100] flex items-center justify-center p-6">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white max-w-2xl w-full rounded-3xl overflow-hidden modal">
+            <div id="case-modal-content" class="p-9">
+                <!-- Dynamic -->
+            </div>
+            <div class="px-9 pb-9 flex gap-x-4">
+                <button onclick="hideCaseModal()" class="flex-1 py-3.5 text-sm font-semibold border rounded-2xl hover:bg-slate-50">Fechar</button>
+                <button onclick="contactProducer()" class="flex-1 py-3.5 text-sm font-semibold bg-emerald-800 text-white rounded-2xl">Falar com o produtor</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success / Certificate Modal -->
+    <div id="success-modal" onclick="if (event.target.id === 'success-modal') hideSuccessModal()" class="hidden fixed inset-0 bg-black/70 z-[110] flex items-center justify-center p-6">
+        <div onclick="event.stopImmediatePropagation()" class="bg-white max-w-md w-full rounded-3xl p-9 modal text-center">
+            <div class="mx-auto w-20 h-20 bg-emerald-100 text-emerald-700 flex items-center justify-center rounded-full mb-6">
+                <i class="fa-solid fa-seedling text-5xl"></i>
+            </div>
+            <h3 class="font-bold text-3xl tracking-tight">Parabéns!</h3>
+            <p id="success-message" class="mt-3 text-slate-600"></p>
+            
+            <div class="mt-8">
+                <button onclick="hideSuccessModal()" 
+                        class="px-10 py-3.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-sm tracking-wider rounded-3xl">ENTENDI</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
